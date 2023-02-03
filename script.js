@@ -57,3 +57,17 @@ function closecard(){
     document.getElementById("card7").style.display="none";
     document.getElementById("card8").style.display="none";
 }
+function trans(){
+    if(document.getElementById("val").innerHTML=="3D"){
+        document.getElementById("transf").style.transform="rotateX(70deg)";
+        document.getElementById("val").innerHTML="2D";
+        document.getElementById("transf").style.top="50%";
+        document.getElementById("planets").style.marginTop="32rem";
+    }
+    else{
+        document.getElementById("transf").style.transform="none";
+        document.getElementById("val").innerHTML="3D";
+        document.getElementById("transf").style.top="78%";
+        document.getElementById("planets").style.marginTop="68rem";
+    }
+}

@@ -79,7 +79,7 @@
             <a href="https://en.wikipedia.org/wiki/Neptune" >Learn more</a>
     </div>
     <section>
-        <div class="sun">
+        <div class="sun" id="transf">
             <img src="./images/sun.gif" alt="">
             <div class="mercury" id="mer">
                 <img src="./images/mercury.gif" alt="">
@@ -109,7 +109,7 @@
                 <img src="./images/neptune.gif" alt="">
             </div>
         </div>
-        <div class="planets">
+        <div class="planets" id="planets">
             <a href="#" onclick="openMer()">Mercury</a>
             <a href="#" onclick="openV()">Venus</a>
             <a href="#" onclick="openE()">Earth</a>
@@ -120,8 +120,10 @@
             <a href="#" onclick="openNep()">Neptune</a>
 
         </div>
+        <div class="transform">
+            <button onclick="trans()">View as <span id="val">3D</span></button>
+        </div>
     </section>
-    
     <script src="./script.js"></script>
 </body>
 </html>

@@ -11,6 +11,7 @@ body{
     background-repeat: repeat-y;
     color: white;
     font-family: 'Playfair Display', serif;
+    transition: 0.25s ease;
 }
 .heading h1,p{
     align-items: center;
@@ -29,6 +30,7 @@ body{
     position: absolute;
     left: 42.5%;
     top: 78%;
+    transition: 1s ease-in-out;
 }
 .sun img{
     margin-left: 2rem;
@@ -237,6 +239,8 @@ body{
     align-items: center;
     display: flex;
     margin-bottom: 4rem;
+    transition: 1s ease-in-out;
+
 }
 .planets a{
     transition: all 0.25s ease;
@@ -279,4 +283,30 @@ body{
     margin-left: 91.8%;
     margin-top: -1.6rem;
     width: 20px;
+}
+.transform{
+    margin-bottom: 4rem;
+    margin-top: -2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.transform button{
+    padding: 1rem;
+    background: transparent;
+    color: white;
+    border-radius: 5rem;
+    border: solid white;
+    border-width: 1px;
+    font-family: 'Playfair Display', serif;
+    cursor: pointer;
+    font-size: 1rem;
+    /* transition-delay: 1.5ms; */
+    font-weight: 2rem;
+    transition: 0.25s ease;
+}
+.transform button:hover{
+    background-color: white;
+    border: black;
+    color: black;
 }
